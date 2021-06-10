@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+:root {
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --dark-graysh-magenta: hsl(303, 10%, 53%);
+  --light-graysh-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  margin: 100px;
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+  background-color: var(--white);
+  color: var(--very-dark-magenta);
+  line-height: 1.8;
+  max-width: 100%;
+  max-height: 100vh;
+}
+.flex {
+  display: flex;
+  margin-bottom: 80px;
+}
+.left {
+  width: 450px;
+  margin-right: 100px;
+}
+.stars {
+  background-color: var(--light-graysh-magenta);
+  border-radius: 10px;
+  margin: 20px;
+  width: 400px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+.stars img {
+  height: 10px;
+  padding-left: 5px;
+}
+.star {
+  color: var(--very-dark-magenta);
+  font-weight: 700;
+  margin-left: 40px;
+}
+.stars:nth-child(2) {
+  transform: translateX(25px);
+}
+.stars:nth-child(3) {
+  transform: translateX(50px);
+}
+.card {
+  width: 300px auto;
+  height: auto;
+  background-color: var(--very-dark-magenta);
+  margin-right: 25px;
+  color: var(--light-graysh-magenta);
+  padding: 20px;
+  border-radius: 5px;
+}
+.info {
+  display: flex;
+}
+.card img {
+  border-radius: 50%;
+  margin-right: 35px;
+  margin-bottom: 25px;
+}
+span {
+  color: var(--soft-pink);
+}
+.card2 {
+  transform: translateY(25px);
+}
+.card3 {
+  transform: translateY(50px);
+}
+footer {
+  display: flex;
+  justify-content: center;
+  color: var(--soft-pink);
+  font-size: 12px;
+  margin-top: 25px;
+}
+footer a {
+  text-decoration: none;
+  color: var(--very-dark-magenta);
+}
+@media (max-width: 657px) {
+  body {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
+  .left {
+    width: 100vw auto;
+    margin: 0;
+    text-align: center;
+  }
+  .stars:nth-child(2) {
+    transform: translateX(0px);
+  }
+  .stars:nth-child(3) {
+    transform: translateX(0px);
+  }
+  .card {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer {
+    font-size: 8px;
+    text-align: center;
+  }
+}
